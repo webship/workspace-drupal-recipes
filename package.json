@@ -1,0 +1,55 @@
+{
+  "name": "@webship/workspace-drupal-recipes",
+  "version": "1.0.0",
+  "description": "The Drupal recipes workspace for Webship Workspace: the `recipes/` folder (type code), its settings file, its 8 commands and its docs, activated as a plugin.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-drupal-recipes",
+  "files": [
+    "dist/src",
+    "commands",
+    "config",
+    "docs",
+    "features",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "drupal-recipes",
+    "label": "Drupal recipes",
+    "workspace": {
+      "key": "recipes",
+      "settingsTemplate": "config/workspace.recipes.settings.yml",
+      "files": [
+        "commands/cmd-tool-backup-recipe.sh",
+        "commands/cmd-tool-git-change-filemode-to-false.sh",
+        "commands/cmd-tools-checks.sh",
+        "commands/cmd-tools-gitlab-ci-local.sh",
+        "commands/cmd-tools-graphify.sh",
+        "commands/cmd-tools-obsidian.sh",
+        "commands/cmd-tools-ragify.sh",
+        "commands/cmd-tools-reclaim.sh"
+      ],
+      "docs": [
+        "docs/AGENTS.md",
+        "docs/CLAUDE.md",
+        "docs/README.md"
+      ]
+    },
+    "features": [
+      "features/drupal-recipes.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
