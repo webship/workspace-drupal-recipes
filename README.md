@@ -20,13 +20,6 @@ The settings file and the docs are placed once and never overwritten: they hold 
 
 | Command |
 | --- |
-| `cmd-tool-backup-recipe.sh` |
-| `cmd-tool-git-change-filemode-to-false.sh` |
-| `cmd-tools-checks.sh` |
-| `cmd-tools-gitlab-ci-local.sh` |
-| `cmd-tools-graphify.sh` |
-| `cmd-tools-obsidian.sh` |
-| `cmd-tools-ragify.sh` |
-| `cmd-tools-reclaim.sh` |
+| (none) |
 
 The bash functions these commands call live in the dashboard's `core/scripts/functions`.
