@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-drupal-recipes",
   "version": "1.0.0-alpha1",
-  "description": "The Drupal recipes workspace for Webship Workspace: the `recipes/` folder (type code), its settings file, its 0 commands and its docs, activated as a plugin.",
+  "description": "The Drupal recipes workspace for Webship Workspace: the `recipes/` folder (type code), its settings file, its 5 commands and its docs, activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -29,7 +29,13 @@
     "workspace": {
       "key": "recipes",
       "settingsTemplate": "config/workspace.recipes.settings.yml",
-      "files": [],
+      "files": [
+        "commands/cmd-tool-backup-recipe.sh",
+        "commands/cmd-tool-git-change-filemode-to-false.sh",
+        "commands/cmd-tools-checks.sh",
+        "commands/cmd-tools-gitlab-ci-local.sh",
+        "commands/cmd-tools-reclaim.sh"
+      ],
       "docs": [
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
