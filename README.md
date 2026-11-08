@@ -1,4 +1,4 @@
-# @webship/workspace-drupal-recipes
+# @webship.co/workspace-drupal-recipes
 
 The **Drupal recipes** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `recipes/` folder (type `code`), its settings file (`core/config/workspace.recipes.settings.yml`),
