@@ -31,3 +31,13 @@ bash cmd-tools-ragify.sh                              # Index a project in this 
 
 Every one locates the workspace from its own path, so there is nothing to export and nothing to
 install. `--help` on any of them lists its arguments.
+
+## AI items for this folder
+
+The plugin of this folder (`@webship.co/workspace-drupal-recipes`) places its own AI items in the AI folders of the
+workspace, when they are active:
+
+- `recipes-maintainer` (`ai-agents/`): Works on a Drupal recipe package checked out in `recipes/` and brings it to green before a push: its checks, its pipeline on this machine, a backup
+- `recipes-workflow` (`ai-skills/`): How work is done in `recipes/`: see what is declared, check, run the pipeline locally, push when green; every command with its flags, the settings keys
+- `/recipes-check` (`ai-commands/`): `/recipes-check <recipe> [checks]`: prints the plan, runs the declared checks and says what is red and why
+- `recipes-green-gate` (`ai-prompts/`): A new session that runs a recipe's checks and its pipeline on this machine and reports green or red
