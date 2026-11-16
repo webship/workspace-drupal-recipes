@@ -1,6 +1,6 @@
 ---
 name: recipes-maintainer
-description: Use this agent to work on a Drupal recipe package checked out in the `recipes/` folder of the Webship Workspace and bring it to green before a push: its code-quality checks with `cmd-tools-checks.sh`, its GitLab CI pipeline on this machine with `cmd-tools-gitlab-ci-local.sh`, a backup with `cmd-tool-backup-recipe.sh`. It never deletes or re-clones a checkout. Invoke for "run the checks of this recipe", "run the recipe's pipeline locally before I push", "why is this job red", "back up this recipe", or "which recipes are checked out".
+description: Use this agent to work on a Drupal recipe package checked out in the `recipes/` folder of the Webship Workspace and bring it to green before a push — its code-quality checks with `cmd-tools-checks.sh`, its GitLab CI pipeline on this machine with `cmd-tools-gitlab-ci-local.sh`, a backup with `cmd-tool-backup-recipe.sh`. It never deletes or re-clones a checkout. Invoke for "run the checks of this recipe", "run the recipe's pipeline locally before I push", "why is this job red", "back up this recipe", or "which recipes are checked out".
 model: fable
 tools:
   - Bash
